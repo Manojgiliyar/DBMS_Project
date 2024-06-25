@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
+	</head>
+	<body class="background">
+	<div id="aa" style="white-space:nowrap">
+   	  		<div id="image" style="display:inline;">
+       			 <img src="images/icon.png">
+    		</div>
+    		<div id="texts" style="display:inline; white-space:nowrap;">SMARTPHONE ALLEY</div>
+   			<div id="texts" style="display:inline;position:relative;top:-20;left:450; font-size:18px">User: <?php $_SESSION['user_name']?></div>
+    		<a id="texts" style="display:inline;position:relative;top:-20;left:500;font-size:18px" href="first.php">Logout</a>
+    		 <h4 align=center><a href="login.php" style="font-family : Nexa Bold;text-align:center;font-size:15px;color:#D8D8D8;position:relative;top:-10;left:10;">Not satified? Try changing your budget here</a></h4>
+    
+      
+      
+   			</div>
+   			<form action="" method="post"> 
+  		<div>    		
+      		<table id="customers">
+  				<tr>
+    				<th>BRAND</th>
+   					<th>MODEL</th>
+    				<th>PRICE</th>
+    				<th>e-commerce</th>
+    				<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  				</tr>
+<tr>
+  					<td><?php echo $mod['brand_name'] ?></td>
+  					<td><?php echo $mod['model_name'] ?></td>
+  					<td><?php echo $mod['price'] ?></td>
+  					<td><a href="<?php echo $mod['e_commerce'] ?>" target="_blank" style="color:black;">CLICK HERE</a></td>
+  					<td><input type="submit" name="remove_<?php echo $mod['model_id']?>" value="Remove" id="remove_<?php echo $mod['model_id']?>" ></td>
+  				</tr>
+  				<?php }?>
+  
+    
+			</table>
+			
+		</div>
+		</form>
+  	</body>
+</html>

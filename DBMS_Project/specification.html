@@ -1,0 +1,59 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
+	</head>
+<body class="background">
+<div id="aa" style="white-space:nowrap">
+   	  <div id="image" style="display:inline;">
+        <img src="images\icon.png">
+    </div>
+      <div id="texts" style="display:inline; white-space:nowrap;">SMARTPHONE ALLEY</div>
+      <div id="texts" style="display:inline;position:relative;top:-15;left:450; font-size:18px">User : <?php echo $_SESSION['user_name'];?></div>
+      <a id="texts" style="display:inline;position:relative;top:-15;left:500;font-size:18px" href="first.php">LOGOUT</a>
+    </div>
+    <h4 align=center><a href="login.php" style="font-family : Nexa Bold;text-align:center;font-size:15px;color:#D8D8D8;position:relative;top:-10;left:10;">Not satified? Try changing your budget here</a></h4>
+    
+    
+    <div style="position:relative;top:60;">
+    <?php echo '<img src="' . $model['img'] . '" width="25%" height="70%"/>' ?> 
+    <a href ="wishlist.php" ><button style="position:relative; top:-230;left:-240;font-family:Nexa;font-size:11px;width:12%;height:5%;" style="position:relative;top:-5;">
+     ADD TO WISHLIST</button></a>
+     </div>
+     
+    <section style="position: relative;top:-450;left:400;width:50%;">
+    <h5 style="font-family: Nexa Bold;color:red;">Brand : <?php echo $model['brand_name'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Model : <?php echo $model['model_name'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Price : <?php echo $model['price'] ?></h5>
+    <hr>    
+    <h5 style="font-family: Nexa Bold;color:red;">Primary Camera (MPs) : <?php echo $model['p_camera'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Secondary Camera (MPs) : <?php echo $model['s_camera'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">RAM : <?php echo $model['ram'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Memory (internal) : <?php echo $model['rom'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Screen Size (inches) : <?php echo $model['screen_size'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">OS : <?php echo $model['os_name'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Battery (mAh) : <?php echo $model['battery'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Processor : <?php echo $model['p_vendor']; echo $model['processor_name'] ?> </h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">GPU : <?php echo $model['gpu'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Processor cores : <?php echo $model['no_of_cores'] ?></h5>
+    <hr>
+    <h5 style="font-family: Nexa Bold;color:red;">Popularity : <?php echo $model['popularity'] ?></h5>
+    <hr>
+    
+  
+ 
+    
+    </section>
+       </body>
+       </html>
